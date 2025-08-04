@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>전교회장·부회장 선거 공약</title>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Arial, sans-serif; 
+            background: linear-gradient(135deg, #e0ffe0 0%, #f4f4f4 100%);
+            margin: 0; 
+            padding: 0; 
+        }
+        .container { 
+            max-width: 650px; 
+            margin: 40px auto; 
+            background: #fff; 
+            padding: 35px 30px 30px 30px; 
+            border-radius: 18px; 
+            box-shadow: 0 4px 16px rgba(44, 130, 67, 0.13);
+            animation: fadeInUp 1.2s cubic-bezier(.23,1.01,.32,1) both;
+        }
+        @keyframes fadeInUp {
+            0% { opacity: 0; transform: translateY(40px);}
+            100% { opacity: 1; transform: translateY(0);}
+        }
+        h1 { 
+            text-align: center; 
+            color: #2d7a2d; 
+            letter-spacing: 2px;
+            margin-bottom: 18px;
+            animation: popIn 1s cubic-bezier(.23,1.01,.32,1) both;
+        }
+        @keyframes popIn {
+            0% { opacity: 0; transform: scale(0.8);}
+            80% { opacity: 1; transform: scale(1.05);}
+            100% { opacity: 1; transform: scale(1);}
+        }
+        .team-photo { 
+            display: flex; 
+            justify-content: center; 
+            margin-bottom: 22px; 
+        }
+        .team-photo img { 
+            width: 260px; 
+            height: 180px; 
+            object-fit: cover; 
+            border-radius: 16px; 
+            border: 3px solid #b6e2b6;
+            box-shadow: 0 2px 12px rgba(44,130,67,0.10);
+            transition: transform 0.4s cubic-bezier(.23,1.01,.32,1);
+        }
+        .team-photo img:hover {
+            transform: scale(1.04) rotate(-2deg);
+            box-shadow: 0 6px 24px rgba(44,130,67,0.18);
+        }
+        .team-info { 
+            text-align: center; 
+            margin-bottom: 28px; 
+        }
+        .team-names { 
+            font-size: 1.25em; 
+            font-weight: bold; 
+            color: #2d7a2d; 
+            margin-bottom: 6px; 
+            letter-spacing: 1px;
+        }
+        .team-positions { 
+            font-size: 1em; 
+            color: #555; 
+        }
+        .promise-title {
+            text-align: center;
+            font-size: 1.15em;
+            color: #388e3c;
+            margin-bottom: 10px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            animation: fadeInUp 1.5s 0.3s both;
+        }
+        ul { 
+            margin-top: 18px; 
+            text-align: left; 
+            display: inline-block; 
+            padding-left: 0;
+            width: 100%;
+            animation: fadeInUp 1.5s 0.5s both;
+        }
+        li { 
+            margin-bottom: 13px; 
+            font-size: 1.07em;
+            padding-left: 36px;
+            position: relative;
+            color: #2d7a2d;
+            line-height: 1.7;
+            opacity: 0;
+            animation: listFadeIn 0.7s forwards;
+        }
+        li:nth-child(1) { animation-delay: 0.2s;}
+        li:nth-child(2) { animation-delay: 0.4s;}
+        li:nth-child(3) { animation-delay: 0.6s;}
+        li:nth-child(4) { animation-delay: 0.8s;}
+        li:nth-child(5) { animation-delay: 1.0s;}
+        @keyframes listFadeIn {
+            0% { opacity: 0; transform: translateX(-30px);}
+            100% { opacity: 1; transform: translateX(0);}
+        }
+        li::before {
+            content: "🌱";
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 1.1em;
+            line-height: 1.7;
+        }
+        .footer {
+            text-align: center;
+            color: #aaa;
+            font-size: 0.95em;
+            margin-top: 30px;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>전교회장·부회장 선거 공약</h1>
+        <div class="team-photo">
+            <img src="team.jpg" alt="회장·부회장 단체사진">
+        </div>
+        <div class="team-info">
+            <div class="team-names">회장: - &nbsp;|&nbsp; 부회장: -, -</div>
+            <div class="team-positions">전교회장 1명, 전교부회장 2명</div>
+        </div>
+        <div class="promise-title">공약(One Day)</div>
+        <ul>
+            <li>Opportunity: 부홈페이지 개설</li>
+            <li>New: 교육급식위원회신설</li>
+            <li>Environment: 프린터기 설치<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;옷걸이 행거 설치</li>
+            <li>Develop: 성적분석 베네듀 학습법</li>
+            <li>Active: SNS 활성화<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;대의원회 활성화</li>
+            <li>You: 여러분들이 만드는 학교 여러분들이 주인</li>
+        </ul>
+        <div class="footer">
+            함께 만드는 더 좋은 학교! <br>
+            여러분의 소중한 한 표를 기다립니다.
+        </div>
+    </div>
+</body>
+</html>
