@@ -4,120 +4,108 @@
     <meta charset="UTF-8">
     <title>전교회장·부회장 선거 공약</title>
     <style>
-        body { 
-            font-family: 'Segoe UI', Arial, sans-serif; 
-            background: linear-gradient(135deg, #e0ffe0 0%, #f4f4f4 100%);
-            margin: 0; 
-            padding: 0; 
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #181818;
+            margin: 0;
+            padding: 0;
+            color: #fff;
         }
-        .container { 
-            max-width: 650px; 
-            margin: 40px auto; 
-            background: #fff; 
-            padding: 35px 30px 30px 30px; 
-            border-radius: 18px; 
-            box-shadow: 0 4px 16px rgba(44, 130, 67, 0.13);
-            animation: fadeInUp 1.2s cubic-bezier(.23,1.01,.32,1) both;
+        .container {
+            max-width: 650px;
+            margin: 48px auto;
+            background: #fff;
+            color: #181818;
+            padding: 38px 32px 32px 32px;
+            border-radius: 20px;
+            box-shadow: 0 6px 32px rgba(0,0,0,0.18);
         }
-        @keyframes fadeInUp {
-            0% { opacity: 0; transform: translateY(40px);}
-            100% { opacity: 1; transform: translateY(0);}
-        }
-        h1 { 
-            text-align: center; 
-            color: #2d7a2d; 
+        h1 {
+            text-align: center;
+            color: #181818;
             letter-spacing: 2px;
-            margin-bottom: 18px;
-            animation: popIn 1s cubic-bezier(.23,1.01,.32,1) both;
+            margin-bottom: 22px;
+            font-weight: 700;
         }
-        @keyframes popIn {
-            0% { opacity: 0; transform: scale(0.8);}
-            80% { opacity: 1; transform: scale(1.05);}
-            100% { opacity: 1; transform: scale(1);}
+        .team-photo {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 24px;
         }
-        .team-photo { 
-            display: flex; 
-            justify-content: center; 
-            margin-bottom: 22px; 
+        .team-photo img {
+            width: 260px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 16px;
+            border: 2px solid #222;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.13);
+            background: #181818;
         }
-        .team-photo img { 
-            width: 260px; 
-            height: 180px; 
-            object-fit: cover; 
-            border-radius: 16px; 
-            border: 3px solid #b6e2b6;
-            box-shadow: 0 2px 12px rgba(44,130,67,0.10);
-            transition: transform 0.4s cubic-bezier(.23,1.01,.32,1);
+        .team-info {
+            text-align: center;
+            margin-bottom: 30px;
         }
-        .team-photo img:hover {
-            transform: scale(1.04) rotate(-2deg);
-            box-shadow: 0 6px 24px rgba(44,130,67,0.18);
-        }
-        .team-info { 
-            text-align: center; 
-            margin-bottom: 28px; 
-        }
-        .team-names { 
-            font-size: 1.25em; 
-            font-weight: bold; 
-            color: #2d7a2d; 
-            margin-bottom: 6px; 
+        .team-names {
+            font-size: 1.25em;
+            font-weight: bold;
+            color: #181818;
+            margin-bottom: 7px;
             letter-spacing: 1px;
         }
-        .team-positions { 
-            font-size: 1em; 
-            color: #555; 
+        .team-positions {
+            font-size: 1em;
+            color: #444;
         }
         .promise-title {
             text-align: center;
             font-size: 1.15em;
-            color: #388e3c;
-            margin-bottom: 10px;
+            color: #181818;
+            margin-bottom: 12px;
             font-weight: bold;
             letter-spacing: 1px;
-            animation: fadeInUp 1.5s 0.3s both;
         }
-        ul { 
-            margin-top: 18px; 
-            text-align: left; 
-            display: inline-block; 
+        ul {
+            margin-top: 20px;
+            text-align: left;
+            display: block;
             padding-left: 0;
             width: 100%;
-            animation: fadeInUp 1.5s 0.5s both;
         }
-        li { 
-            margin-bottom: 13px; 
-            font-size: 1.07em;
-            padding-left: 36px;
+        li {
+            margin-bottom: 15px;
+            font-size: 1.09em;
+            padding-left: 38px;
             position: relative;
-            color: #2d7a2d;
+            color: #181818;
             line-height: 1.7;
-            opacity: 0;
-            animation: listFadeIn 0.7s forwards;
-        }
-        li:nth-child(1) { animation-delay: 0.2s;}
-        li:nth-child(2) { animation-delay: 0.4s;}
-        li:nth-child(3) { animation-delay: 0.6s;}
-        li:nth-child(4) { animation-delay: 0.8s;}
-        li:nth-child(5) { animation-delay: 1.0s;}
-        @keyframes listFadeIn {
-            0% { opacity: 0; transform: translateX(-30px);}
-            100% { opacity: 1; transform: translateX(0);}
+            background: #f5f5f5;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+            padding-top: 10px;
+            padding-bottom: 10px;
         }
         li::before {
-            content: "🌱";
+            content: "•";
             position: absolute;
-            left: 0;
-            top: 0;
-            font-size: 1.1em;
-            line-height: 1.7;
+            left: 14px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.2em;
+            color: #181818;
         }
         .footer {
             text-align: center;
-            color: #aaa;
-            font-size: 0.95em;
-            margin-top: 30px;
+            color: #fff;
+            font-size: 1em;
+            margin-top: 38px;
             letter-spacing: 1px;
+            background: #181818;
+            padding: 18px 0 10px 0;
+            border-radius: 0 0 20px 20px;
+            box-shadow: 0 -2px 12px rgba(0,0,0,0.13);
+        }
+        @media (max-width: 700px) {
+            .container { margin: 18px; }
         }
     </style>
 </head>
